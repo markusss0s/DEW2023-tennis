@@ -1,9 +1,12 @@
 class Player {
   name;
+  ranking;
 
-  constructor(name) {
+  constructor(name, ranking) {
     this.name = name;
+    this.ranking = ranking;
   }
+  
 }
 module.exports = Player;
 //PRUEBA->
