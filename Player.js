@@ -1,10 +1,19 @@
 class Player {
   name;
   ranking;
+  #gender;
+  
 
-  constructor(name, ranking) {
+  constructor(name, ranking, gender = 'female') {
     this.name = name;
     this.ranking = ranking;
+    if(gender == 'male') this.#gender = 'male';
+    else this.#gender = 'female';
+    
+  }
+
+  setGender(){
+    
   }
   
 }
