@@ -8,7 +8,7 @@ class Match{
             this.date = date;
         }else{
             const [day, month, year] = date.split('/');
-            this.date = new Date([year, month, day].join('/'));
+            this.date = new Date([year, month - 1, day].join('/'));
         } 
             
     }
